@@ -1,0 +1,84 @@
+/* Light mode gradient background */
+body {
+  background: linear-gradient(135deg, #ff7eb3, #ff758c, #ffb07c, #8ec5fc, #6a82fb);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  padding-top: 30px;
+  margin: 0;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Glassmorphism main card */
+.card-custom {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Table hover effect */
+.table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  transition: 0.25s;
+}
+
+/* Round inputs & buttons */
+input,
+button {
+  border-radius: 10px !important;
+}
+
+/* Colorful modal */
+.modal-content {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fcb69f, #a1c4fd, #c2e9fb);
+  color: #222;
+  border-radius: 20px;
+  padding: 10px 20px 20px 20px;
+  font-weight: 500;
+}
+
+/* ---------- DARK MODE ---------- */
+
+.dark-bg {
+  background: #050816;
+  min-height: 100vh;
+  padding-top: 30px;
+}
+
+.dark-bg .card-custom {
+  background: rgba(15, 23, 42, 0.95);
+  color: #e5e7eb;
+}
+
+.dark-bg table {
+  color: #e5e7eb;
+}
+
+.dark-bg .table thead {
+  background: #0f172a !important;
+}
+
+.dark-bg .modal-content {
+  background: #111827;
+  color: #e5e7eb;
+}
+
+.dark-bg input {
+  background: #0f172a;
+  color: #e5e7eb;
+  border-color: #374151;
+}
+
+.dark-bg .btn-light {
+  background: #374151;
+  color: #e5e7eb;
+}

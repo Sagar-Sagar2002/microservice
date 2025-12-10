@@ -1,0 +1,6 @@
+const db = mysql.createConnection({
+    host: "mysql",
+    user: "sagar",
+    password: "sagar",
+    database: "microservice"
+});
